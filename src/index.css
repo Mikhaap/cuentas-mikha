@@ -1416,3 +1416,43 @@ body {
 }
 
 }
+
+/* FUERZA BRUTA - QUE NADA DESBORDE */
+#pantallaMovimientos,
+.filtros-rapidos,
+.buscador,
+.lista-movimientos,
+.item-mov,
+.item-contenido,
+.item-superior,
+.item-info {
+  max-width: 100vw !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+}
+
+/* Ajuste fino para los items */
+.item-mov {
+  padding: 10px 6px !important;
+  margin-bottom: 4px !important;
+}
+
+.item-contenido {
+  width: calc(100% - 36px) !important;
+}
+
+.menu-mov {
+  min-width: 28px !important;
+  width: 28px !important;
+  margin-right: 2px !important;
+}
+
+.item-info {
+  padding-right: 4px !important;
+}
+
+.item-monto {
+  padding-left: 4px !important;
+  font-size: 0.95rem !important;
+}
