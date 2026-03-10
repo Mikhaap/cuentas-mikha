@@ -1276,3 +1276,108 @@ body {
     text-align: center;
   }
 }
+
+/* Corrección forzada para la pantalla de movimientos */
+#pantallaMovimientos {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.filtros-rapidos {
+  flex-wrap: wrap !important;
+  gap: 4px !important;
+}
+
+.btn-filtro {
+  flex: 1 1 auto !important;
+  min-width: 70px !important;
+  font-size: 0.8rem !important;
+  padding: 8px 4px !important;
+  white-space: nowrap !important;
+}
+
+.total-filtro {
+  flex-wrap: wrap !important;
+  gap: 4px !important;
+  font-size: 0.9rem !important;
+  padding: 10px !important;
+}
+
+.buscador {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  font-size: 0.9rem !important;
+  padding: 12px !important;
+}
+
+.lista-movimientos {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  padding: 4px !important;
+  margin: 8px 0 !important;
+}
+
+.item-mov {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 10px 8px !important;
+  gap: 6px !important;
+  flex-wrap: wrap !important;
+  box-sizing: border-box !important;
+}
+
+.item-contenido {
+  width: calc(100% - 40px) !important;
+  min-width: 0 !important;
+}
+
+.item-superior {
+  flex-wrap: wrap !important;
+  gap: 2px !important;
+}
+
+.item-info {
+  flex: 1 1 100% !important;
+  min-width: 0 !important;
+}
+
+.item-info strong {
+  font-size: 0.9rem !important;
+  word-break: break-word !important;
+  white-space: normal !important;
+  display: block !important;
+  line-height: 1.3 !important;
+}
+
+.item-detalle {
+  font-size: 0.75rem !important;
+  word-break: break-word !important;
+  white-space: normal !important;
+  margin-top: 2px !important;
+}
+
+.item-monto {
+  font-size: 1rem !important;
+  min-width: auto !important;
+  white-space: nowrap !important;
+  margin-left: auto !important;
+}
+
+.item-fecha {
+  width: 100% !important;
+  font-size: 0.7rem !important;
+  text-align: left !important;
+  margin-top: 2px !important;
+  color: #8b6b5c !important;
+}
+
+.menu-mov {
+  flex-shrink: 0 !important;
+  width: 28px !important;
+  height: 28px !important;
+}
