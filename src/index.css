@@ -1456,3 +1456,59 @@ body {
   padding-left: 4px !important;
   font-size: 0.95rem !important;
 }
+
+/* PRUEBA DEFINITIVA - ANCHO FORZADO */
+#pantallaMovimientos,
+.filtros-rapidos,
+.buscador,
+.lista-movimientos,
+.item-mov,
+.item-contenido,
+.item-superior,
+.item-info,
+.item-monto,
+.menu-mov {
+  max-width: 100% !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Forzar a que los items se apilen verticalmente */
+.item-superior {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 2px !important;
+}
+
+.item-info {
+  width: 100% !important;
+  padding-right: 0 !important;
+}
+
+.item-info strong {
+  font-size: 0.9rem !important;
+  line-height: 1.2 !important;
+  white-space: normal !important;
+  word-break: break-word !important;
+}
+
+.item-monto {
+  width: 100% !important;
+  text-align: left !important;
+  font-size: 0.95rem !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.item-contenido {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.menu-mov {
+  width: 28px !important;
+  min-width: 28px !important;
+  margin-right: 4px !important;
+}
