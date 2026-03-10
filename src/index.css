@@ -1396,3 +1396,23 @@ body {
     font-size: 0.9rem !important;
   }
 }
+/* SOLUCIÓN DEFINITIVA PARA TEXTOS LARGOS */
+.item-info {
+  white-space: normal !important;
+  overflow: visible !important;
+  word-break: break-word !important;
+}
+
+.item-info strong {
+  white-space: normal !important;
+  word-break: break-word !important;
+  font-size: 0.9rem !important;
+  line-height: 1.2 !important;
+}
+
+.item-contenido {
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+}
