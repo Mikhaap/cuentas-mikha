@@ -5,6 +5,12 @@
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
 body {
   background: #fdf7ed;
   min-height: 100vh;
@@ -1038,30 +1044,235 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+/* Media queries para móviles */
+@media (max-width: 600px) {
   .app {
-    padding: 12px 10px 20px;
+    padding: 12px 8px 20px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .header {
+    padding: 10px 12px;
+    gap: 4px;
   }
   
   .header h1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+  
+  .mes-selector select {
+    font-size: 0.9rem;
+    padding: 4px 20px 4px 6px;
+    max-width: 140px;
+  }
+  
+  .tabs {
+    gap: 4px;
+    padding: 4px;
+  }
+  
+  .tab {
+    font-size: 0.8rem;
+    padding: 8px 0;
+  }
+  
+  .item-mov {
+    padding: 10px 8px;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  
+  .item-superior {
+    flex-wrap: wrap;
+  }
+  
+  .item-info {
+    min-width: 0;
+    flex: 1 1 60%;
+  }
+  
+  .item-info strong {
+    font-size: 0.9rem;
+    display: block;
+    white-space: normal;
+    word-break: break-word;
+  }
+  
+  .item-detalle {
+    font-size: 0.75rem;
+    white-space: normal;
+    word-break: break-word;
   }
   
   .item-monto {
     font-size: 1rem;
-    min-width: 70px;
+    min-width: auto;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  
+  .item-fecha {
+    font-size: 0.7rem;
+  }
+  
+  .btn-flotante {
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .menu-mov {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .menu-mov span {
+    font-size: 1rem;
+  }
+  
+  .bloque-verde, .bloque-mostaza, .bloque-bordo {
+    padding: 12px 10px;
+  }
+  
+  .bloque-bordo {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+    font-size: 0.85rem;
+  }
+  
+  .fijo-izquierda {
+    font-size: 0.9rem;
+  }
+  
+  .fijo-centro {
+    font-size: 0.8rem;
+  }
+  
+  .fijo-derecha {
+    font-size: 0.9rem;
+  }
+  
+  .filtros-rapidos {
+    gap: 4px;
+  }
+  
+  .btn-filtro {
+    min-width: 60px;
+    padding: 8px 0;
+    font-size: 0.8rem;
+  }
+  
+  .total-filtro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .buscador {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+  }
+  
+  .modal-content {
+    padding: 20px 16px;
+  }
+  
+  .form-control, .form-select {
+    padding: 14px;
+  }
+  
+  .fila-cuota {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .resumen-botones {
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .gastos-variables-card {
+    padding: 12px;
+  }
+  
+  .fila-gastos {
+    font-size: 0.9rem;
+  }
+  
+  .botones-inferiores {
+    flex-direction: column;
   }
   
   .fila-billetera {
-    flex-wrap: wrap;
-  }
-  
-  .fila-billetera input[type="text"] {
-    flex: 1 1 100%;
+    flex-direction: column;
+    align-items: stretch;
   }
   
   .fila-billetera input[type="text"].monto-con-formato {
-    flex: 1;
-    min-width: 0;
+    text-align: left;
+  }
+  
+  .btn-centrado .btn-herramienta {
+    width: 100%;
+    min-width: auto;
+  }
+  
+  .informe-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .informe-header select, .btn-exportar {
+    width: 100%;
+  }
+  
+  .legend-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .legend-text {
+    width: 100%;
+  }
+  
+  .legend-value {
+    align-self: flex-end;
+  }
+}
+
+/* Para pantallas muy chicas (menos de 360px) */
+@media (max-width: 360px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .mes-selector {
+    justify-content: center;
+  }
+  
+  .item-superior {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .item-monto {
+    align-self: flex-end;
+  }
+  
+  .bloque-bordo {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    text-align: center;
+  }
+  
+  .fijo-izquierda, .fijo-centro, .fijo-derecha {
+    text-align: center;
   }
 }
